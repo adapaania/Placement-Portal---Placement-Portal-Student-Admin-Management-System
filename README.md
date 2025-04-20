@@ -39,25 +39,38 @@ A full-stack web application designed to streamline the campus placement process
 ## 🚀 Setup Instructions
 
 ### 1. Clone the Repository
-```bash
+
 git clone https://github.com/your-username/placement-portal.git
 cd placement-portal
 
+### 2. Create and Activate Virtual Environment
 
 python3 -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 
-pip install -r requirements.txt
+### 3. Install Required Packages
+pip install flask
+pip install flask-cors
+pip install mysql-connector-python
+pip install PyMuPDF
+pip install spacy
+pip install sentence-transformers
+pip install pandas
+python -m spacy download en_core_web_sm
 
+### 4 Configure the MySQL Database
 
-4. Configure the MySQL Database
 Create a database called placement_portal.
 
 Import the provided schema from /db/schema.sql.
 
+### 5. Run the App
+
 python app.py
 
-Project Structure
+
+
+### Project Structure
 
 placement-portal/
 ├── static/                  # CSS, JS, and assets
@@ -67,5 +80,33 @@ placement-portal/
 ├── db_config.py             # DB connection config
 ├── requirements.txt         # Python dependencies
 └── README.md
+
+
+
+```bash
+git clone https://github.com/your-username/placement-portal.git
+cd placement-portal
+
+### 2. Clone the Repository
+python3 -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+
+pip install flask
+pip install flask-cors
+pip install mysql-connector-python
+pip install PyMuPDF
+pip install spacy
+pip install sentence-transformers
+pip install pandas
+python -m spacy download en_core_web_sm
+
+
+4. Configure the MySQL Database
+Create a database called placement_portal.
+
+Import the provided schema from /db/schema.sql.
+
+python app.py
 
 
