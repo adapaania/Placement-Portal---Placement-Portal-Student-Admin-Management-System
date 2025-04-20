@@ -84,29 +84,6 @@ placement-portal/
 
 
 ```bash
-git clone https://github.com/your-username/placement-portal.git
-cd placement-portal
 
-### 2. Clone the Repository
-python3 -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-
-
-pip install flask
-pip install flask-cors
-pip install mysql-connector-python
-pip install PyMuPDF
-pip install spacy
-pip install sentence-transformers
-pip install pandas
-python -m spacy download en_core_web_sm
-
-
-4. Configure the MySQL Database
-Create a database called placement_portal.
-
-Import the provided schema from /db/schema.sql.
-
-python app.py
 
 
