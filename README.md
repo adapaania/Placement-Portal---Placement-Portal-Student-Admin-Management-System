@@ -1,0 +1,2 @@
+# Placement-Portal---Placement-Portal-Student-Admin-Management-System
+A full-stack web application designed to streamline the campus placement process. This portal enables students to register, upload resumes, receive AI-based job recommendations, and apply for jobs. Admins can post job opportunities, track student applications, and manage recruitment data. Developed using Flask, MySQL, HTML/CSS, and JavaScript.
